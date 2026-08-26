@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LivroControler;
+use App\Http\Controllers\OficinaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 
