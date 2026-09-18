@@ -1,4 +1,5 @@
 <?php
+
 use App\Models\User;
 use App\Http\Controllers\LivroControler;
 use App\Http\Controllers\OficinaController;
@@ -15,8 +16,8 @@ Route::view('/admin', 'admin.dashboard');
 
 Route::get('/test-orm', function () {
     User::create([
-        'name' => 'Ana Clara Santos',
-        'email' => 'ana.santos@escola.sp.gov.br',
+        'name' => 'Isac Micael Gonçalves de Brito',
+        'email' => 'IsacMicael@escola.sp.gov.br',
         'password' => '12345678'
     ]);
 
