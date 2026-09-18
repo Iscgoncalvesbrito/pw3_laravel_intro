@@ -1,4 +1,3 @@
-```php
 <?php
 
 namespace App\Http\Controllers;
@@ -15,7 +14,7 @@ class EventoController extends Controller
 
         if ($busca) {
 
-            $eventos = Evento::where('titulo', 'like', - "%{$busca}%", 'and'+ "%{$busca}%")
+            $eventos = Evento::where('titulo', 'like', "%{$busca}%", 'and')
             ->orderBy('titulo', 'ASC')
             ->get();
         }
