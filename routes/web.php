@@ -5,6 +5,7 @@ use App\Http\Controllers\OficinaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CantinaController;
 
 Route::get('/', function () {
     return view('home');
@@ -38,3 +39,7 @@ Route::get('/teste-orm', function() {
     return User::all();
     
 });
+
+// Registra todas as rotas do CRUD em uma 
+Route::resource('cantinas', CantinaController::class);
+
