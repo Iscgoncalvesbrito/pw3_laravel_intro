@@ -13,8 +13,13 @@ return new class extends Migration
     {
         Schema::create('produtaos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->decimal('preco', 10, 2);
+            $table->integer('quantidade_estoque')->default(0);
+            $table->foreignId('categoria_id')->constrained('categorias')->nullOnDelete();
             $table->timestamps();
         });
+
     }
 
     /**
